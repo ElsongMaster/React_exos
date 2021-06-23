@@ -3,3 +3,6 @@ doc pour l'utilisation de fontAwesome => https://www.digitalocean.com/community/
 
 
 doc pour l'utilisation de bootstrap avec react => https://qastack.fr/programming/40037657/how-to-include-bootstrap-css-and-js-in-reactjs-app
+
+
+=>Raccourci pour renommer une variable avec react (F12);
