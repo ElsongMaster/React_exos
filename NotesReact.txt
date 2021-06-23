@@ -1,0 +1,5 @@
+
+doc pour l'utilisation de fontAwesome => https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-fr
+
+
+doc pour l'utilisation de bootstrap avec react => https://qastack.fr/programming/40037657/how-to-include-bootstrap-css-and-js-in-reactjs-app
