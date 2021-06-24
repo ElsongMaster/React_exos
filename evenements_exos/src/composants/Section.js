@@ -2,7 +2,8 @@ import React from "react";
 import "./Section.css";
 class Section extends React.Component {
   render() {
-    return (
+    let nombreArticles = 1;
+    return nombreArticles >= 2 ? (
       <div>
         <section>
           <div className="container_section">
@@ -42,6 +43,8 @@ class Section extends React.Component {
           </div>
         </section>
       </div>
+    ) : (
+      <h1>Il n'y a pas d'article</h1>
     );
   }
 }
