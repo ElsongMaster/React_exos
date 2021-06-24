@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(56, 56, 56);
+  height: 98vh;
+  width: 98vw;
+}
+
+.container_navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid rgb(133, 253, 163);
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 30px;
+  min-width: 200px;
+  /* border: 2px solid purple; */
+}
+.container_navBar * {
+  color: white;
+}
+nav a {
+  cursor: pointer;
+  padding: 0 5px;
+  border: 1px solid rgb(133, 253, 163);
+}
+form {
+  margin-right: 30px;
+}
+
+form input {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+form button {
+  background-color: rgb(133, 253, 163);
+}
+
+@media (max-width: 1000px) {
+  .App {
+    height: fit-content;
+  }
+}
