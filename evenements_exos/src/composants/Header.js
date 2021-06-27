@@ -6,6 +6,7 @@ class Header extends React.Component {
     counter2: 1,
     counter3: 1,
   };
+
   handleEventln1() {
     console.log("Accueil");
   }

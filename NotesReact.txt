@@ -8,3 +8,13 @@ doc pour l'utilisation de bootstrap avec react => https://qastack.fr/programming
 =>Raccourci pour renommer une variable avec react (F12);
 
 => Les conditiond à la volée (avec l'operateur &&), Cela fonctionne car en javascript 'true' && expression est évalué à  'expression'. Si la première condition vaut false, React va ignorer l'expression( il va s'arreter au false)
+
+
+
+Exos envoi des données au parent:
+
+Sur base du projet des composants avec la tartine et de ce qu a été vu précédemment, réponds aux consignes suivantes :
+
+Créer un programme qui au clique d'un bouton affiche le contenu d'une variable, la function est dans le parent, la variable est dans l'enfant, voici les étapes :
+
+Dans ton composant Body créer une function "nbrArticles" qui fait un console.log de son paramètre(choisi un nom pour ce parametre, par exemple nbrArts) et envoi là dans le premier composant ArticlesDans le composant Articles créer une vartiable "nombreArticle" et attribue lui la valeur 2Au clique d'un bouton dans le composant Articles lance la function reçue par le composant parent Body avec comme paramètre nombreArticle.

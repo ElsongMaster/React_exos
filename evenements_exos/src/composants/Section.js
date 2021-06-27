@@ -7,8 +7,8 @@ class Section extends React.Component {
     return nombreArticles >= 2 ? (
       <div>
         <section>
-          <Article title="tartines" />
-          <Article title="Coding School" />
+          <Article propFromApp={this.props.onClickArt} title="tartines" />
+          <Article propFromApp={(e) => {}} title="Coding School" />
         </section>
       </div>
     ) : (

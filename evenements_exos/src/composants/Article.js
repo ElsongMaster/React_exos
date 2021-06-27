@@ -1,9 +1,15 @@
 import React from "react";
 
 class Article extends React.Component {
+  nombreArticle = 2;
+
+  handleClick() {
+    this.props.propFromApp(this.nombreArticle);
+  }
+
   render() {
     return (
-      <div className="container_section">
+      <div className="container_section" onClick={() => this.handleClick()}>
         <div className="container-img">
           <img src="./img/tartine.png" alt="" />
         </div>
