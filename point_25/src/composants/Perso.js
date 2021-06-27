@@ -2,8 +2,9 @@ import React from "react";
 
 class Perso extends React.Component {
   handleClick() {
-    this.props.handClickParent();
+    this.props.handleClickParent();
   }
+
   render() {
     return (
       <div>
@@ -13,8 +14,10 @@ class Perso extends React.Component {
           , j'ai {this.props.personnage.age} et j'habite à molem et je suis
           appelé du composant Perso.js{" "}
         </p>
-        <button onClick={this.handleClick}>Bouton</button>
+        <button onClick={() => this.handleClick()}>Bouton</button>
       </div>
     );
   }
 }
+
+export default Perso;
