@@ -2,7 +2,7 @@ import React from "react";
 import "./navigation.css";
 class Navigation extends React.Component {
   navigation = (destination) => {
-    console.log("navigation vers " + destination.target.textContent);
+    this.props.onNavigation(destination);
   };
   render() {
     return (

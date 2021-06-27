@@ -4,17 +4,23 @@ import Navigation from "./navigation";
 import DemoComponent from "../demoComponent";
 import DisplayTime from "../displayTime";
 class Header extends React.Component {
-  currentPage = "acceuils";
+  currentPage = "heure";
+  onNavigationParent = (destination) => {
+    this.currentPage = destination;
+    console.log(this.currentPage);
+  };
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Navigation />
+          <Navigation onNavigation={this.onNavigationParent} />
           <img src={logo} className="App-logo" alt="logo" />
-          {this.currentPage === "acceuil" ? (
-            <DemoComponent />
-          ) : (
-            <DisplayTime format="jsTime" />
+          {this.currentPage}
+          {this.currentPage == "acceuil" && <DemoComponent />}
+          {this.currentPage == "heure" && (
+            <div>
+              <DisplayTime format="jsTime" />
+            </div>
           )}
         </header>
       </div>

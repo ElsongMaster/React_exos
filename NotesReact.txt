@@ -6,3 +6,5 @@ doc pour l'utilisation de bootstrap avec react => https://qastack.fr/programming
 
 
 =>Raccourci pour renommer une variable avec react (F12);
+
+=> Les conditiond à la volée (avec l'operateur &&), Cela fonctionne car en javascript 'true' && expression est évalué à  'expression'. Si la première condition vaut false, React va ignorer l'expression( il va s'arreter au false)
