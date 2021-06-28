@@ -1,12 +1,24 @@
 import React from "react";
 
 class DisplayTime extends React.Component {
+  state = {
+    dateCourante: new Date(),
+  };
   currentPage = "heure";
+  intervalCode = null;
+  componentDidMount() {
+    this.intervalCode = setInterval(() => {
+      this.setState({
+        dateCourante: new Date(),
+      });
+    }, 1000);
+  }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalCode);
+  }
   render() {
-    console.log(this.props);
-    let dateCourante = new Date();
-    let tempsJavascript = dateCourante.getTime();
+    let tempsJavascript = this.state.dateCourante.getTime();
     let tempsPHP = tempsJavascript / 1000;
     return (
       <div>
@@ -20,8 +32,9 @@ class DisplayTime extends React.Component {
 
         {this.props.format === "humanTime" && (
           <p>
-            Date pour un humain: {dateCourante.getDate()}/
-            {dateCourante.getMonth()}/{dateCourante.getFullYear()}
+            Date pour un humain: {this.state.dateCourante.getDate()}/
+            {this.state.dateCourante.getMonth()}/
+            {this.state.dateCourante.getFullYear()}
           </p>
         )}
       </div>
