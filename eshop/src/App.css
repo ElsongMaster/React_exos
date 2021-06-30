@@ -1,0 +1,34 @@
+#root {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: 97vw;
+}
+
+.App {
+  height: fit-content;
+  width: 80%;
+}
+
+.App-header p {
+  font-size: max(2vw, 25px);
+  font-weight: bold;
+}
+.container-articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 70%;
+}
+
+.eltPanier {
+  margin: 20px 0;
+}
+
+.eltPanier button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
