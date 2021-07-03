@@ -20,6 +20,46 @@ Créer un programme qui au clique d'un bouton affiche le contenu d'une variable,
 Dans ton composant Body créer une function "nbrArticles" qui fait un console.log de son paramètre(choisi un nom pour ce parametre, par exemple nbrArts) et envoi là dans le premier composant ArticlesDans le composant Articles créer une vartiable "nombreArticle" et attribue lui la valeur 2Au clique d'un bouton dans le composant Articles lance la function reçue par le composant parent Body avec comme paramètre nombreArticle.
 
 
+pour les listes: key =>https://fr.reactjs.org/docs/lists-and-keys.html
+
+
+Accèder au DOM avec la props 'refs' voir doc =>https://fr.reactjs.org/docs/refs-and-the-dom.html
+
+Principe des useState(composant fonctionnel) =>https://blog.eleven-labs.com/fr/vous-utilisez-mal-les-states-react/
+
+
+notion de Fragment => https://qastack.fr/programming/31284169/parse-error-adjacent-jsx-elements-must-be-wrapped-in-an-enclosing-tag
+
+=>Le web (world wide web) fait référence au système hypertexte (liste de lien hypertexte "qui renvoi à une autre page") basée sur le réseau internet
+	-Les pages du web vont communiquer entre eux ou vers des serveurs via le protocole de transfert de données (HTTP(S) = Hypertext transfer Protocol(Secured))
+
+	-Plus globalement ce protocol sert à établir une communication entre un client et un serveur
+		-->Client : est un logiciel qui peut envoyer des rêquetes, le plus souvent à un serveur. Il a un role plutôt actif (envoi de requêtes), ensuite il attend la reponse du serveur.
+
+		-->Serveur: est un logiciel également, il a plutôt un role passif, il est à l'écoute, rêt à répondre aux requêtes envoyées par des clients.
+		A la suite du traitement de la requête il va renvoyer la/les réponses au serveur.
+
+	-Comment le processus se déroule, en cliquant sur le lien hypertext de la page google, une requête est envoyé au serveur lié à la page via le protocol HTTP.
+	Le serveur va ensuite traité cette requête et dans ce cas ci renvoyé le site correspondant au lien hypertext.
+
+
+	-Requete via la méthode GET = Envoie des informations (codées) directement via l'url.
+
+	-Requete via la méthode POST, envoi des informations (codées) via le body de la page. Celle-ci est utilisé lorsqu'on l'on va envoyer des données sensibles au serveur(exmpl:mot de passe).
+
+
+=> Les API(Application programming interface):
+	->Une API permet de rendre disponibles les données ou les fonctionnalités d'une application existante afin que d'autres applications les utilisent.
+
+	-> Utiliser une API permet donc d'utiliser un programme existant plutôt que de le re-développer.
+	-Fonctionnalité: Utilise une clé(ou 2) pour pouvoir vous identifier comme utilisateur ayant les droits nécessaire pour se servir de l'API.
+
+	-nb:Tout les grands acteurs du web ont des API comme (Facebbok, Google, Github..)
+
+	-> Une API 'REST'(également appelé RESTful) est simplement une interface de programmation applicative qui respecte les contraintes du style d'architecture REST(Representational State Transfer)
+		-> Exemple d'une API pour un service de météo, lors d'une requête via cette API envoyé par l'utilisateur ce dernier peut spécifier via un code le type de données qu'il veut recevoir (exmpl: via un code qui signifie envoyer moi la temperature maximum et minimum d'un lieu en fonction de son code postale). 
+
+	-> En gros l'API est un intérmédiaire entre un utilisateurs et les services ou ressources web auquelles il veut accèder. 
 
 
 -emporium reponsive (button)
